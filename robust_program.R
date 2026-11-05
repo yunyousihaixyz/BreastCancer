@@ -19,7 +19,7 @@ library(patchwork)
 
 ##### Generation of NMF #########
 #robust_nmf_programs function
-robust_nmf_programs <- function(nmf_programs, intra_min = 30, intra_max = 10, inter_filter=T, inter_min = 10) {
+robust_nmf_programs <- function(nmf_programs, intra_min = 35, intra_max = 10, inter_filter=T, inter_min = 10) {
   
   # Select NMF programs based on the minimum overlap with other NMF programs from the same sample
   intra_intersect <- lapply(nmf_programs, function(z) apply(z, 2, function(x) apply(z, 2, function(y) length(intersect(x,y))))) 

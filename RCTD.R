@@ -10,7 +10,6 @@ suppressPackageStartupMessages({
 })
 
 options(future.globals.maxSize = 300000 * 1024^2)
-plan("multicore", workers = 64)
 
 args <- commandArgs(trailingOnly = TRUE)
 

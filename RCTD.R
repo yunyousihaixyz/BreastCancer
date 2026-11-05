@@ -5,11 +5,8 @@ suppressPackageStartupMessages({
   library(ggplot2)
   library(patchwork)
   library(dplyr)
-  library(future)
   library(tidyverse)
 })
-
-options(future.globals.maxSize = 300000 * 1024^2)
 
 args <- commandArgs(trailingOnly = TRUE)
 
